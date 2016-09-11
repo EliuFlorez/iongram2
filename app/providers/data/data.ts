@@ -16,5 +16,11 @@ export class DataService {
     .toPromise();
   }
 
+  getPhotos(): Promise<any>{
+    return this.http.get(`${this.path}/photos.json`)
+    .map(response => response.json())
+    .toPromise();
+  }
+
 }
 
