@@ -1,0 +1,18 @@
+.login-content {
+  background-color: #4368b6;
+  form{
+    margin-top: 100px;
+    ion-item{
+      background-color: rgba(255,255,255,.4);
+      margin: 8px auto;
+      border-radius: 5px;
+      input{
+         @include placeholder(white);
+         color: white;
+      }
+    }
+    button[type="submit"]{
+      border-radius: 5px; 
+    }
+  }
+}

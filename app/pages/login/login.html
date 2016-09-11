@@ -1,0 +1,21 @@
+<ion-content class="login-content" padding>
+  <form padding (ngSubmit)="doLogin()" [formGroup]="loginForm">
+    <ion-img src="images/logo.iongram.png"></ion-img>
+    <ion-list no-lines>
+      <ion-item>
+        <ion-input placeholder="Username" type="text" formControlName="username"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Password" type="password" formControlName="password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button block light outline type="submit" [disabled]="!loginForm.valid">
+      Login
+    </button>
+    <p light text-center>¿Olvisdate tu contraseña?</p>
+  </form>
+</ion-content>
+
+<ion-footer>
+  <p light text-center>¿No tienes una cuenta? Regístrate</p>
+</ion-footer>

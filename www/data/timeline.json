@@ -1,0 +1,47 @@
+[
+  {
+    "picture": "images/img1.jpg",
+    "text": "Me encantan las canciones de amor",
+    "favorite": false,
+    "user": {
+      "username": "nicobytes",
+      "avatar": "images/nicobytes.jpg",
+      "location": "Bogota"
+    },
+    "comments": [
+      {
+        "comment": "Muy bonito",
+        "user": {
+          "username": "nicobytes",
+          "avatar": "images/nicobytes.jpg"
+        }
+      },
+      {
+        "comment": "Que buena foto",
+        "user": {
+          "username": "perry",
+          "avatar": "images/perry.png"
+        }
+      }
+    ]
+  },
+  {
+    "picture": "images/img2.jpg",
+    "text": "y aquellas que inspiren un mundo mejor",
+    "favorite": true,
+    "user": {
+      "username": "Adam",
+      "avatar": "images/adam.jpg",
+      "location": "Medellin"
+    },
+    "comments": [
+      {
+        "comment": "Que buena foto",
+        "user": {
+          "username": "perry",
+          "avatar": "images/perry.png"
+        }
+      }
+    ]
+  }
+]

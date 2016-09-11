@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <ion-img class="logo-header" src="images/iongram.png"></ion-img>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="timeline-content">
+  <ion-card *ngFor="let item of timeline">
+    <ion-item>
+      <ion-avatar item-left>
+        <img [src]="item.user.avatar">
+      </ion-avatar>
+      <h2>{{ item.user.username }}</h2>
+       <p>{{ item.user.location }}</p>
+      <button item-right clear dark (click)="showOptions()">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-item>
+    <ion-img [src]="item.picture"></ion-img>
+    <button dark clear [class.favorite]="item.favorite" (click)="like( item )">
+      <ion-icon [name]="item.favorite ? 'heart': 'heart-outline'"></ion-icon>
+    </button>
+    <button dark clear (click)="showComments( item )">
+      <ion-icon name="chatbubbles-outline"></ion-icon>
+    </button>
+    <button dark clear>
+      <ion-icon name="send-outline"></ion-icon>
+    </button>
+    <ion-card-content>
+      <p>{{ item.text }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
