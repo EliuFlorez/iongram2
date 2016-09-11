@@ -23,6 +23,10 @@ export class TimelinePage {
     this.loadTimeline();
   }
 
+  ionViewDidEnter(){
+    
+  }
+
   showOptions(){
     let action = this.actionCtrl.create({
       buttons: [

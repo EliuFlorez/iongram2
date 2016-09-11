@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Fotos</ion-title>
+    <ion-buttons start>
+      <button (click)="close()">
+        Cancelar
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button (click)="goToFilterPage()">
+        Seguir
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="library-content">
+  <div class="photo cover">
+    <ion-img [src]="photoSelected.picture"></ion-img>
+  </div>
+  <ion-grid>
+    <ion-row wrap>
+      <ion-col width-25 *ngFor="let photo of photos" (click)="changePhoto( photo )">
+        <ion-img [src]="photo.picture" class="photo"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -20,16 +20,14 @@ export class SearchPage {
     this.loadPhotos();
   }
 
-  ngAfterViewInit(){
-
-  }
+  
 
   query(event: any): void{
 
     this.photos = this.photosCopy;
 
     let value = event.target.value;
-    
+
     if(value && value.trim() != ''){
 
       let text = value.toLowerCase().replace(/,|\.|-/g, ' ');

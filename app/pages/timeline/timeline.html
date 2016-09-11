@@ -20,13 +20,13 @@
     </ion-item>
     <ion-img [src]="item.picture"></ion-img>
     <button dark clear [class.favorite]="item.favorite" (click)="like( item )">
-      <ion-icon [name]="item.favorite ? 'heart': 'heart-outline'"></ion-icon>
+      <ion-icon [name]="item.favorite ? 'heart': 'ios-heart-outline'"></ion-icon>
     </button>
     <button dark clear (click)="showComments( item )">
-      <ion-icon name="chatbubbles-outline"></ion-icon>
+      <ion-icon name="ios-chatbubbles-outline"></ion-icon>
     </button>
     <button dark clear>
-      <ion-icon name="send-outline"></ion-icon>
+      <ion-icon name="ios-send-outline"></ion-icon>
     </button>
     <ion-card-content>
       <p>{{ item.text }}</p>
